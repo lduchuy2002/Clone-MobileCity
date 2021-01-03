@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mygrid.css">
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+  <!-- TOP HEADER -->
+  <header>
+    
+    <div class="header-info header__admin">
+      <div class="admin--site">
+        <img src="./img/admin.png" alt="">
+        <a href="">Admin</a>
+      </div>
+    </div>
+    <div class="header-info header__hotline">
+      <div class="header__hotline--number">
+          <p>Hotline: <span>HN: 0969.120.120 - SG: 0965.123.123 - ĐN: 096.123.9797</span></p>
+      </div>
+    </div>
+    <div class="header-info header__sign-in">
+      <a href="#"><i class="fas fa-user-circle"></i>  Sign-in</a>
+    </div>
+  </header>
+<!-- END TOP HEADER -->
+
+<!-- NAVIGATION MENU -->
+<nav>
+
+  <!-- TASKBAR BUTTON WHEN RESPONSIVE -->
+  <span class="nav--res">
+    <i class="fas fa-bars"></i>
+  </span>
+
+  <!-- NAV LOGO -->
+  <div class="nav__logo clearfix">
+    <h1>MOBILE CITY</h1>
+  </div>
+
+  <!-- NAV SEARCH -->
+  <div class="nav__search clearfix1"> 
+    <form action="" class="nav__search--submit">
+        <input type="text" id="nav__search--input" placeholder="Tìm kiếm sản phẩm ...">
+        <i class="fas fa-search"></i>
+    </form>
+  </div>
+
+  <!-- TASKBAR -->
+  <ul class="nav__taskbar clearfix">
+    <li class="menu--icon"><a href="index.html"><img src="./img/phone.png" alt=""><span>ĐIỆN THOẠI</span></a></li>
+    <li class="menu--icon"><a href="#"><img src="./img/tablet.png" alt=""><span>TABLET</span></a></li>
+    <li class="menu--icon"><a href="#"><img src="./img/phone.png"  alt=""><span>PHỤ KIỆN</span></a></li>
+    <li class="menu--icon"><a href="#"><img src="./img/broken-phone.png" alt=""><span>SỬA CHỮA</span></a></li>
+    <li class="menu--icon"><a href="#"><img src="./img/broken-phone.png" alt=""><span>UNLOCK</span></a></li>
+    <li class="menu--icon"><a href="#"><img src="./img/tablet.png" alt=""><span></span>TIN TỨC</a></li>
+    <!-- EXIT TASKBAR BUTTON WHEN RESPONSIVE -->
+    <span id="exit--res""><i class="fas fa-times"></i></span>
+  </ul>
+</nav>
+
+<!-- GET BACK LIST -->
+<ul class="get-back">
+  <li class="get-back__item"><a href="index.html">Trang chủ</a>  </li>
+  <li class="get-back__item"><a href="">Điện thoại di động</a></li>
+  <li class="get-back__item"><a href="#" id="phone-name">null</a></li>
+</ul>
+
+<!-- PRODUCT TITLE -->
+<div class="product-title">
+  <h1 id="title-name"></h1>
+  <span id="price"></span>
+</div>
+
+<!-- SHOW PRODUCT -->
+
+<section class="show-product">
+  <img  id="img"src="" alt="">
+  <table class="show-product__info">
+    <tr class="screen">
+      <td class="sreen-left left">Màn hình:</td>
+      <td class="screen-right"></td>
+    </tr>
+    <tr class="Os">
+      <td class="Os-left left">Hệ điều hành:</td>
+      <td class="Os-right"></td>
+    </tr>
+    <tr class="camera">
+      <td class="camera-left left">Camera:</td>
+      <td class="camera-right"></td>
+    </tr>
+    <tr class="CPU">
+      <td class="CPU-left left">CPU:</td>
+      <td class="CPU-right"></td>
+    </tr>
+    <tr class="RAM">
+      <td class="RAM-left left">RAM:</td>
+      <td class="RAM-right"></td>
+    </tr>
+    <tr class="ROM">
+      <td class="ROM-left left">Bộ nhớ trong:</td>
+      <td class="ROM-right"></td>
+    </tr>
+    <tr class="SIM"> 
+      <td class="SIM-left left">SIM:</td>
+      <td class="SIM-right"></td>
+    </tr>
+    <tr class="PIN"> 
+      <td class="PIN-left left">Dung lượng PIN:</td>
+      <td class="PIN-right"></td>
+    </tr>
+    <tr class="design"> 
+      <td class="design-left left">Thiết Kế:</td>
+      <td class="design-right"></td>
+    </tr>
+  </table>
+</section>
+<section class="buy">
+  <a id="buy-btn">
+      <span>Mua ngay</span>
+      <p>Giao hàng tận nơi miễn phí</p>
+  </a>
+</section>
+</body>
+<script src="https://use.fontawesome.com/releases/v5.15.0/js/all.js" data-auto-replace-svg="nest"></script>
+<script src="productDetail.js"></script>
+<script src="res.js"></script>
+</html>

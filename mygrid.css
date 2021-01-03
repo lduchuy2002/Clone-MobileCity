@@ -1,0 +1,44 @@
+.grid{
+  margin: 0 auto;
+  width: 1200px;
+  display: grid;
+}
+.g-5{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 235px 235px 235px 235px 235px;
+}
+
+@media only screen and (max-width:1200px){
+  .grid{
+
+    width: 960px;
+  }
+  .g-5{
+
+    grid-template-columns: 235px 235px 235px 235px;
+  }
+}
+
+@media only screen and (max-width:981px){
+  .grid{
+
+    width: 720px;
+  }
+  .g-5{
+
+    grid-template-columns: 235px 235px 235px;
+  }
+}
+
+
+@media only screen and (max-width:760px){
+  .grid{
+
+    width: 100%;
+  }
+  .g-5{
+
+    grid-template-columns: 49.5% 49.5%;
+  }
+}

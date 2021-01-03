@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+  <header>
+    
+    <div class="header-info header__admin">
+      <div class="admin--site">
+        <img src="./img/admin.png" alt="">
+        <a href="">Admin</a>
+      </div>
+    </div>
+    <div class="header-info header__hotline">
+      <div class="header__hotline--number">
+          <p>Hotline: <span>HN: 0969.120.120 - SG: 0965.123.123 - ĐN: 096.123.9797</span></p>
+      </div>
+    </div>
+    <div class="header-info header__sign-in">
+      <a href="login.html"><i class="fas fa-user-circle"></i>  Đăng nhập</a>
+    </div>
+  </header>
+<!-- END TOP HEADER -->
+
+<!-- NAVIGATION MENU -->
+<nav>
+
+  <!-- TASKBAR BUTTON WHEN RESPONSIVE -->
+  <span class="nav--res">
+    <i class="fas fa-bars"></i>
+  </span>
+
+  <!-- NAV LOGO -->
+  <div class="nav__logo clearfix">
+    <h1>MOBILE CITY</h1>
+  </div>
+
+  <!-- NAV SEARCH -->
+  <div class="nav__search clearfix1"> 
+    <form action="" class="nav__search--submit">
+        <input type="text" id="nav__search--input" placeholder="Tìm kiếm sản phẩm ...">
+        <i class="fas fa-search"></i>
+    </form>
+  </div>
+
+  <!-- TASKBAR -->
+  <ul class="nav__taskbar clearfix">
+    <li class="menu--icon"><a href="index.html"><img src="./img/phone.png" alt=""><span>ĐIỆN THOẠI</span></a></li>
+    <li class="menu--icon"><a href="#"><img src="./img/tablet.png" alt=""><span>TABLET</span></a></li>
+    <li class="menu--icon"><a href="#"><img src="./img/phone.png"  alt=""><span>PHỤ KIỆN</span></a></li>
+    <li class="menu--icon"><a href="#"><img src="./img/broken-phone.png" alt=""><span>SỬA CHỮA</span></a></li>
+    <li class="menu--icon"><a href="#"><img src="./img/broken-phone.png" alt=""><span>UNLOCK</span></a></li>
+    <li class="menu--icon"><a href="#"><img src="./img/tablet.png" alt=""><span></span>TIN TỨC</a></li>
+    <!-- EXIT TASKBAR BUTTON WHEN RESPONSIVE -->
+    <span id="exit--res""><i class="fas fa-times"></i></span>
+  </ul>
+</nav>
+
+
+<!-- // NOTE Đăng nhập -->
+<section class="container">
+  <div class="login">
+    <h1 class="mg">Đăng Nhập</h1>
+
+
+        <form action="#" class="account mg">
+          <input type="text" id="acc" placeholder="Email/Số điện thoại/Tên đăng nhập" required>
+        </form>
+        <p id="check-acc"></p>
+
+
+        <form action="#" class="password mg" >
+          <input type="password" id="pass" placeholder="Password" required>            
+        </form>
+        <p id="check-pass"></p>
+
+        <button class="login__submit mg" type="button">ĐĂNG NHẬP</button>
+
+
+        <div class="login__options mg">
+          <span>Quên mật khẩu</span>
+          <span>Đăng nhâp với SMS</span>
+        </div>
+
+
+        <div class="or mg">
+            <div></div>
+            <span>HOẶC</span>
+            <div></div>
+        </div>
+
+
+        <div class="login__social mg">
+          <a class="fb social" href="https://www.facebook.com/">
+            <i class="fab fa-facebook"></i>
+            Facebook</a>
+          <a class="gg social" href="https://www.youtube.com/?gl=VN">
+            <i class="fab fa-google"></i>     Google</a>
+          <a class="app social" href="#">
+            <i class="fab fa-apple"></i>  Apple</a>
+        </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://use.fontawesome.com/releases/v5.15.0/js/all.js" data-auto-replace-svg="nest"></script>
+<script src="res.js"></script>
+<script>
+  let check = {
+      account: false,
+      password: false
+  }
+  const regexAccount = (account)=>{
+    return /^[a-zA-Z]+[a-zA-Z0-9]*\.?[0-9A-Za-z]+\@[a-z]+(\.[a-z]+)+$/g.test(account);
+  }
+  const regrexPass = (ps) =>{
+      return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])[0-9A-Za-z!@#$%^&*]{8,16}$/g.test(ps);
+  }   
+      document.querySelector('#acc').addEventListener('blur',()=>{
+        let accountValue= document.querySelector('#acc').value;
+        let checkAcc=document.getElementById('check-acc');
+          if(accountValue===""||accountValue===null){
+              checkAcc.textContent='Vui lòng nhập email';
+              document.querySelector('.account').classList.add('border');
+          }
+          else if(!regexAccount(accountValue)){
+                checkAcc.textContent='Vui lòng nhâp đúng định dạng email';
+                document.querySelector('.account').classList.add('border');
+          } else{
+            checkAcc.textContent='';
+            check.account=true;
+            document.querySelector('.account').classList.remove('border');
+          } 
+    })
+    document.querySelector('#pass').addEventListener('blur',()=>{
+        let passwordValue= document.querySelector('#pass').value;
+        let checkPass=document.getElementById('check-pass');
+          if(passwordValue===""||passwordValue===null){
+              checkPass.textContent='Vui lòng nhập mật khẩu';
+              document.querySelector('.password').classList.add('border');
+              check.password=false;
+          }
+          else if(!regrexPass(passwordValue)){
+                checkPass.textContent='Vui lòng nhâp 8-16 kí tự, ít nhất 1 kí tự hoa, số, kí tự thường và 1 kí tự đặc biệt (!@#$%^&*)';
+                check.password=false;
+                document.querySelector('.password').classList.add('border');
+          } else{
+            checkPass.textContent='';
+            check.password=true;
+            document.querySelector('.password').classList.remove('border');
+          } 
+    })
+
+
+
+    const submitButton = document.querySelector('.login__submit');
+      submitButton.style.cursor = 'not-allowed';
+      submitButton.addEventListener('mouseover',()=>{
+          if(check.account===true&&check.password===true){
+                submitButton.style.cursor='pointer';
+                submitButton.addEventListener('click',()=>{
+                  window.location.assign('index.html');
+                  localStorage.setItem('sign',true);
+                })
+          }
+      })
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,123 @@
+/* CSS FOR GET BACK LIST */
+
+.get-back{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+  font-size: 1.7rem;
+  font-weight: 600;
+  
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.get-back__item:not(:first-child){
+
+  display: flex;
+  align-items: center;
+
+}
+.get-back__item > a{
+  color: #AF7300;
+}
+.get-back__item:not(:last-child)::after{
+  content: ">";
+  color: #000000;
+  font-weight: 300;
+  margin: 0 20px 0 20px;
+  font-size:1.2rem;
+}
+
+
+/* PRODUCT TITTLE --------------------------------------------------------------------*/
+.product-title{
+  width: 80%;
+  margin: 20px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color:#58595B;
+  align-items: center;
+  
+}
+
+#price{
+  font-size: 2.4rem;
+  color: #FF0000;
+  font-weight: 700;
+}
+/* SHOW PRODUCT -----------------------------------------------------------------------*/
+.show-product{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 50px;
+}
+.show-product > img{
+  width: 28%;
+  /* flex-grow: 1; */
+}
+
+.show-product__info{
+  width: 80%;
+
+  font-size: 2rem;
+  
+}
+ td{
+   text-align: start;
+   border: 2px solid rgb(238, 237, 237);
+  padding: 5px 0 5px 0;;
+}
+.left{
+  font-weight: 700;
+}
+
+/* BUY BUTTON */
+
+
+.buy{
+  width: 80%;
+  margin: 0 auto;
+  display:flex;
+  justify-content: flex-start;
+}
+#buy-btn > *{
+  text-align: center;
+}
+#buy-btn > p{
+  font-size:1.2rem;
+}
+#buy-btn{
+  width:160px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color:#DF8241;
+  padding: 10px 0 10px 0;
+  font-size: 2rem;
+  color: #ffff;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1200px){
+  .show-product{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .show-product__info{
+    width: 100%;
+  }
+  .show-product > img{
+    width: 80%;
+  }
+  .product-title{
+    flex-direction: column;
+  }
+}

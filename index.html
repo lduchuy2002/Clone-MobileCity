@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mygrid.css">
+</head>
+
+<body>
+  <div class="cart">
+    <div class="quantity">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cart-item">0 item</span>
+      <i class="far fa-times-circle"></i>
+    </div>
+    <div class="cart-body">
+
+      <!-- <div class="item">
+          <ul>
+            <li class="item-adjust">
+              <span class="plus">+</span>
+              <span class="number">1</span>
+              <span class="minus"><i class="fas fa-minus" style="font-size:14px"></i></span>
+            </li>
+            <li class="cart-img">
+                <img src="./img/mc-realme-q.jpg" alt="">
+            </li>
+            <li class="cart-name">Điện thoại reamme q</li>
+            <li class="cart-price">3.600.000đ</li>
+            <li class="cancel"><i class="fas fa-times"></i></li>
+          </ul>
+        </div> -->
+    </div>
+    <footer class="cart-footer">
+      <div class="check-cart">
+        <a href="" class="check-out">Checkout</a>
+        <div class="total">
+          <span class="total-price">16.000.000đ</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  </div>
+  <!-- TOP HEADER -->
+  <header>
+
+    <div class="header-info header__admin">
+      <div class="admin--site">
+        <img src="./img/admin.png" alt="">
+        <a href="">Admin</a>
+      </div>
+    </div>
+    <div class="header-info header__hotline">
+      <div class="header__hotline--number">
+        <p>Hotline: <span>HN: 0969.120.120 - SG: 0965.123.123 - ĐN: 096.123.9797</span></p>
+      </div>
+    </div>
+    <div class="header-info header__sign-in">
+      <a href="login.html" id='sign'><i class="fas fa-user-circle"></i> Đăng nhập</a>
+    </div>
+  </header>
+  <!-- END TOP HEADER -->
+
+  <!-- NAVIGATION MENU -->
+  <nav>
+
+    <!-- TASKBAR BUTTON WHEN RESPONSIVE -->
+    <span class="nav--res">
+      <i class="fas fa-bars"></i>
+    </span>
+
+    <!-- NAV LOGO -->
+    <div class="nav__logo clearfix">
+      <h1>MOBILE CITY</h1>
+    </div>
+
+    <!-- NAV SEARCH -->
+    <div class="nav__search clearfix1">
+      <form action="" class="nav__search--submit">
+        <input type="text" id="nav__search--input" placeholder="Tìm kiếm sản phẩm ...">
+        <i class="fas fa-search"></i>
+      </form>
+    </div>
+
+    <!-- TASKBAR -->
+    <ul class="nav__taskbar clearfix">
+      <li class="menu--icon"><a href="#phone"><img src="./img/phone.png" alt=""><span>ĐIỆN THOẠI</span></a></li>
+      <li class="menu--icon"><a href="#"><img src="./img/tablet.png" alt=""><span>TABLET</span></a></li>
+      <li class="menu--icon"><a href="#"><img src="./img/phone.png" alt=""><span>PHỤ KIỆN</span></a></li>
+      <li class="menu--icon"><a href="#"><img src="./img/broken-phone.png" alt=""><span>SỬA CHỮA</span></a></li>
+      <li class="menu--icon"><a href="#"><img src="./img/broken-phone.png" alt=""><span>UNLOCK</span></a></li>
+      <li class="menu--icon"><a href="#"><img src="./img/tablet.png" alt=""><span></span>TIN TỨC</a></li>
+      <!-- EXIT TASKBAR BUTTON WHEN RESPONSIVE -->
+      <span id="exit--res""><i class=" fas fa-times"></i></span>
+    </ul>
+  </nav>
+  <!-- END NAVIGATION MENU -->
+
+
+  <!-- INTRO VIDEO SECTION -->
+  <!-- <div class="intro" style="background:black">
+  <video src="./img/intro.mp4" class="intro__video" loop preload="auto" playsinline autoplay></video>
+  <video src="./img/intro1.mp4" class="intro__video" loop preload="auto" playsinline autoplay></video>
+</div> -->
+  <!-- END VIDEO SECTION -->
+
+  <!-- CAROUSEL SECTION -->
+
+  <div class="carousel">
+    <div class="carousel__slides">
+      <img src="./img/slider2.jpg" class="slides slides1" alt="">
+      <img src="./img/slider3.jpg" class="slides slides2" alt="">
+      <img src="./img/slider4.jpg" class="slides slides3" alt="">
+      <img src="./img/slider7.jpg" class="slides slides4" alt="">
+
+    </div>
+  </div>
+  <section class="category">
+    <ul class="category__product-list">
+      Hãng
+      <li class="category__product--link"><a href="">Tivi Xiaomi</a></li>
+      <li class="category__product--link"><a href="">Apple (iPhone)-Quốc tế</a></li>
+      <li class="category__product--link"><a href="">Apple (iPhone)-Lock </a></li>
+      <li class="category__product--link"><a href="">Samsung</a></li>
+      <li class="category__product--link"><a href="">OnePlus</a></li>
+      <li class="category__product--link"><a href="">Xiaomi</a></li>
+      <li class="category__product--link"><a href="">OPPO (Realme)</a></li>
+      <li class="category__product--link"><a href="">Vivo</a></li>
+      <li class="category__product--link"><a href="">Asus</a></li>
+      <li class="category__product--link"><a href="">ZTE (Nubia)</a></li>
+      <li class="category__product--link"><a href="">Nokia</a></li>
+      <li class="category__product--link">
+        <select class="sort-btn">
+          <option value="Giá từ thấp đến cao" class="esc">Giá từ thấp đến cao</option>
+          <option value="Giá từ thấp đến cao" class="des">Giá từ cao đến thấp</option>
+        </select></button></li>
+    </ul>
+  </section>
+  <section class="product grid g-5" id="phone">
+    <!-- 
+  <div class="product__item">
+    <a class="product__item-top" href="">
+      <span id="new">Mới</span>
+      <span id="hot">Hot</span>
+      <img src="./img/redmi-note-8.jpg" id="item-img" alt="">
+    </a>
+    <div class="product__item-bottom">
+      <a class="product__item-bottom-link">
+        <div class="item-inf">
+          <div class="item-name">Xiaomi Redmi Note 8</div>
+          <div class="item-price">3.350.000 ₫</div>
+        </div>
+        <div class="item-buy">
+          <span href="" class="buy-btn">Mua</span>
+        </div>
+      </a>
+      <div class="product__item-bottom-gift">
+        <p>1. Tặng<span> Cường lực - Ốp lưng - Tai nghe</span> khi mua BHV</p>
+        <p>2. Giảm <span>100K</span> áp dụng HSSV Mua BHV</p>
+      </div>
+    </div>
+  </div> -->
+  </section>
+  .
+  <section class="see-more"><a href="#">Xem thêm điện thoại</a></section>
+
+  <script src="https://use.fontawesome.com/releases/v5.15.0/js/all.js" data-auto-replace-svg="nest"></script>
+  <script src="effect.js"></script>
+  <script src="feature.js"></script>
+  <script src="res.js"></script>
+  <script type="module" src="run.js"></script>
+  <script>
+    const x = localStorage.getItem('sign');
+    if (x)
+    {
+      document.getElementById('sign').textContent = 'Giỏ hàng';
+    }
+  </script>
+</body>
+
+</html>
